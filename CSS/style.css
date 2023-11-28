@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    padding: 0.5rem;
+    color: red;
+    font-weight: bolder;
+}
+
+section.carousel{
+    height: 75vh;
+    background-color: red;
+    position: relative;
+}
+
+.box-image-active{
+    height:70%;
+    width: 80%;
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.invisible{
+    display: none;
+    transition: width 5s;
+}
+
+.active{
+    display: block;
+}
+
+.image-carousel{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+
+.name-postion{
+    position: absolute;
+    bottom: 0.5rem ;right: 0.5rem;
+    background-color: rgba(0,0,0,0.3);
+    padding: 0.5rem;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 10px;
+}
+
+/* Style footer carosello */
+div.carousel-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.carousel-footer>*{
+    margin: 0.5rem 1.5rem;
+}
+
+i{
+    font-size: 1.5rem;
+    color: red;
+}
+
+ul.city-list{
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+
+div.container-list{
+    width: 100%;
+    border:3px solid white;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 0;
+    margin: 0;
+}
+
+button{
+    padding: 1rem;
+    border: 0;
+    border-radius: 15px;
+    background-color: white;
+    cursor: pointer;
+}
+
+span.li-city-list{
+    color:white;
+    font-weight: bold;
+    transition: font-size 1s 0s;
+    cursor: pointer;
+}
+
+span.li-city-list:hover{
+    font-size: 1.3rem;
+}
