@@ -50,7 +50,7 @@ let CapitalOfEuropa = [
    
 ]
 
-//Element DOM's
+//DOM's element
 const sectionCarousel = document.querySelector('section.carousel')
 const ulCityList = document.querySelector('ul.city-list')
 
@@ -117,6 +117,9 @@ function starterCarosol(){
     });    
 }
 
+/**
+ * Create carousel's footer with name of citys
+ */
 function createCityList(){
     CapitalOfEuropa.forEach((city, index) =>{
         const liElement = document.createElement('li');
@@ -135,6 +138,9 @@ function createCityList(){
     })
 }
 
+/**
+ * autochange the image active
+ */
 function autoChangeImg(){
 const imgActive = document.querySelector('div.active>img');
     if(imgActive.getAttribute('src')==CapitalOfEuropa[activeIndex].images[2]){
